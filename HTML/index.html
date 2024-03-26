@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Faça o login</title> 
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   
+<link rel="stylesheet" media="(max-width: 920px)" href="/CSS/style.css" />
+
+<style>
+ @media (375px<=width<=920px) {          
+         
+            .wrapper {
+                width: 80%; /* Exemplo: Reduz a largura do formulário */
+                margin: 0 auto; /* Centraliza o formulário */
+                
+            }
+            .input-box {
+                margin-bottom: 15px; /* Adiciona um espaçamento entre os campos de entrada */
+            }
+
+            .whatsapp-button {
+                width: 55%;
+                
+            }
+
+        }  
+</style>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <form action="#">
+            <h1>LOGIN</h1>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Lembrar login </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="registro.html">Registre-se</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <div>
+        <!-- Botão do WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=555511numerodetelefone" class="whatsapp-button" target="_blank">
+            <i class='bx bxl-whatsapp whatsapp-icon'></i>
+            Fale Conosco
+        </a>
+    </div>
+
+
+</body>
+
+</html>
